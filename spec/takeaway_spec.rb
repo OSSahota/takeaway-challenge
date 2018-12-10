@@ -10,7 +10,7 @@ describe Takeaway do
 
   let(:items) { [:fish, :fish, :chips] }
 
-  describe '#menu' do
+  describe '#show_menu' do
     before do
       allow(subject).to receive(:menu) { menu }
     end
@@ -19,5 +19,15 @@ describe Takeaway do
       expect(subject.menu).to eq menu
     end
   end
+
+  # describe '#verify_order' do
+  #   before do
+  #     allow(subject).to receive(:items) {[]}
+  #   end
+  #
+  #   it 'raises an error if no items have been ordered' do
+  #     expect{ subject.verify_order }.to raise_error "No items have been ordered from the menu"
+  #   end
+  # end
 
 end

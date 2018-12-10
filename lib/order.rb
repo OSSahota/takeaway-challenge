@@ -5,6 +5,7 @@ class Order
   def initialize
     @items = []
 
+    # will transfer the menu to a separate file towards the end
     @menu = {
         "fish": 1,
         "chips": 1,
@@ -23,6 +24,12 @@ class Order
     quantity.times do
       @items << item
     end
+  end
+
+  def calculate_total
+    items.map do |item|
+      @menu[item.to_sym]
+    end.reduce(0, :+)
   end
 
 end
