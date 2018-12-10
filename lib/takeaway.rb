@@ -18,7 +18,6 @@ class Takeaway
   end
 
   def verify_order
-    # fail "No items have been ordered from the menu" if @items == []
     order.calculate_total
   end
 

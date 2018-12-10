@@ -20,14 +20,4 @@ describe Takeaway do
     end
   end
 
-  # describe '#verify_order' do
-  #   before do
-  #     allow(subject).to receive(:items) {[]}
-  #   end
-  #
-  #   it 'raises an error if no items have been ordered' do
-  #     expect{ subject.verify_order }.to raise_error "No items have been ordered from the menu"
-  #   end
-  # end
-
 end
